@@ -19,9 +19,11 @@ public abstract class Peca_de_Roupa {
 
     public void reposicaoEstoque() {
         if (quantidade < estoqueMinimo) {
-            quantidade = estoqueMaximo;
+           system.out.println("O(a) " +descricao + "Precisa de repocisão")
+               
+        }else{
+             quantidade = estoqueMaximo;
             System.out.println("Estoque de " + descricao + " foi reposto ao máximo.");
-        }
     }
 
     
