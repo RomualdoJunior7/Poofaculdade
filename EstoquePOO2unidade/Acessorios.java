@@ -6,8 +6,6 @@ public class Acessorios extends Peca_de_Roupa {
     public Acessorios(String descricao, int quantidade, int estoqueMinimo, int estoqueMaximo) {
         super(descricao, quantidade, estoqueMinimo, estoqueMaximo);
     }
-
-    @Override
     public int venda(Scanner scanner) {
         System.out.println("Estoque disponível: " + quantidade);
         System.out.print("Quantidade vendida de " + descricao + ": ");
